@@ -1,0 +1,41 @@
+1- Configurando ambiente e conhecendo o SQL:
+
+    A recuperar o ambiente;
+    Um pouco da história do SQL;
+    Um pouco da história do MYSQL;
+
+2- Filtrando as consultas de dados:
+
+    A importância de conhecer a base de dados antes de fazer as consultas;
+    O comando de consultas e como podemos filtrá-las;
+    Como podemos mesclar filtros condicionais com AND e OR;
+    A usar >, >=, <, <=, = ou <> nos filtros que envolvem valores;
+    Como funciona o comando LIKE;
+
+3- Apresentação dos dados de uma consulta:
+
+    Como apresentar somente linhas distintas numa seleção;
+    Como ordenar a saída da seleção;
+    Como agrupar linhas por um conjunto de campos e aplicando um critério de agrupamento sobre os campos numéricos (SOMA, MIN, MAX, MÉDIA, etc ..).
+    Como utilizar o comando HAVING para aplicar um filtro usando os campos numéricos agrupados como condição.
+    Como limitar a saída das consultas;
+    Como usar o CASE para classificar um determinado campo por um critério.
+
+4- Juntando tabelas e consultas:
+
+    Como conectar duas ou mais tabelas através de JOINs;
+    Os tipos de JOINs existentes e quais são suportados pelo MYSQL;
+    Os comandos UNION e UNION ALL, para juntar duas ou mais seleções desde que tenham os mesmos campos selecionados;
+    Usar uma consulta como critério de filtro de outra consulta;
+    Como usar uma consulta dentro de outra consulta;
+    Criar e usar visões (Views);
+
+5 - Funções do MYSQL:
+
+    Algumas funções de texto;
+    Funções matemáticas;
+    Foi mostrado funções de datas;
+    Abordamos funções de conversão.
+
+6 - Exemplos de relatórios:
+    Colocarmos em prática o nosso conhecimento montando dois relatórios conforme especificado pela empresa de suco de frutas.

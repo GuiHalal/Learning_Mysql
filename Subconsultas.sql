@@ -1,0 +1,17 @@
+use sucos_vendas;
+
+select distinct BAIRRO FROM tabela_de_vendedores;
+
+-- MÁ PRATICA
+-- select * FROM tabela_de_clientes WHERE BAIRRO IN --(ESCREVE RETONO DA PESQUISA DE CIMA)
+
+select * FROM tabela_de_clientes WHERE BAIRRO IN (select distinct BAIRRO FROM tabela_de_vendedores);
+
+SELECT X.EMBALAGEM, X.PRECO_MAXIMO FROM
+(SELECT EMBALAGEM, MAX(PRECO_DE_LISTA) AS PRECO_MAXIMO FROM tabela_de_produtos
+GROUP BY EMBALAGEM) X WHERE X.PRECO_MAXIMO > 10;
+
+SELECT X.CPF, X.CONTADOR FROM 
+(SELECT CPF, COUNT(*) AS CONTADOR FROM 
+notas_fiscais WHERE YEAR(DATA_VENDA) = 2016 GROUP BY CPF) X
+WHERE X.CONTADOR > 2000; 
