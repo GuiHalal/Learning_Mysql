@@ -1,0 +1,30 @@
+1 - Instalando e configurando o MYSQL
+    Introdução
+    História do SQL
+    História do MySQL
+    Instalando o MySQL e o Workbench.
+
+2 - Manipulando o banco de dados
+    A acessar e navegar pelo Workbench;
+    A criar um banco de dados por linha de SQL ou pelo assistente;
+    Como apagar um banco de dados por linha de SQL ou pelo assistente;
+    Como acessar uma tabela por linha de comando ou pelo assistente;
+
+3 - Gerenciando as tabelas do banco de dados
+    Os tipos de dados que compõem uma tabela;
+    Como criar uma tabela, tanto por script como por assistente;
+    Como apagar uma tabela.
+
+4 - Manutenção dos dados nas tabelas
+    Aprendemos a incluir dados em uma tabela, de diversas formas;
+    Vimos como alterar um dado já existente na tabela;
+    Vimos como apagar uma linha da tabela;
+    Conhecemos a importância das chaves primárias e o cuidado que devemos ter ao criá-las;
+    Aprendemos a manipular campos do tipo lógicos e do tipo date.
+
+5 - Consultando os dados
+    Como visualizar os dados de uma tabela;
+    Como segregar a seleção de dados;
+    A usar as condições de maior e menor na seleção de dados da tabela;
+    Como filtrar dados através de datas.
+    Como implementamos filtros compostos.
