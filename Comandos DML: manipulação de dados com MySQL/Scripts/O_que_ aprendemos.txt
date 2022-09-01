@@ -1,0 +1,25 @@
+1 - Modelagem do banco de dados:
+    Como modelar um banco de dados baseado no negócio da empresa;
+    Revisamos todas as entidades envolvidas em um banco de dados;
+    Aprendemos os tipos de dados que compõem uma tabela.
+
+2 - Criando a estrutura do banco de dados
+    Aprendemos a criar o banco de dados.
+    Aprendemos a criar uma tabela;
+    Vimos que o nome dos campos podem ser modificados mesmo depois da tabela ter sido criada;
+    Podemos criar as tabelas por um assistente. Foi mostrado isso nesta aula;
+    Vimos como criar os relacionamentos entre as tabelas;
+    Vimos que o nome da tabela também pode ser modificada após sua criação.
+
+3 - Incluindo dados nas tabelas
+    Aprendemos a incluir dados em uma tabela, através de comando;
+    Vimos a inclusão de vários registros em um único comando;
+    Foi mostrado como incluir dados na tabela através de um assistente;
+    Mostramos como incluir dados usando um arquivo externo.
+
+4 - Alterando e excluindo dados existentes nas tabelas
+    Alterar e excluir dados de uma tabela, através de comando ou em lotes;
+    Vimos que podemos alterar ou excluir todos os dados de uma tabela;
+    O que é uma transação e como podemos desfazer modificações efetuadas anteriormente na base de dados.
+
+5 - Auto incremento, padrões e Triggers

@@ -1,0 +1,41 @@
+-- Including_multiple_records
+
+USE vendas_sucos;
+
+SELECT * FROM sucos_vendas.tabela_de_produtos;
+
+SELECT CODIGO_DO_PRODUTO as CODIGO, NOME_DO_PRODUTO as DESCRITOR, EMBALAGEM, 
+TAMANHO, SABOR, PRECO_DE_LISTA as PRECO_LISTA 
+FROM sucos_vendas.tabela_de_produtos;
+
+select * FROM PRODUTOS;
+
+SELECT CODIGO_DO_PRODUTO as CODIGO, NOME_DO_PRODUTO as DESCRITOR, EMBALAGEM, 
+TAMANHO, SABOR, PRECO_DE_LISTA as PRECO_LISTA 
+FROM sucos_vendas.tabela_de_produtos 
+WHERE CODIGO_DO_PRODUTO NOT IN (SELECT CODIGO FROM PRODUTOS);
+
+-- atention to the orfer of the column 
+INSERT INTO PRODUTOS
+SELECT CODIGO_DO_PRODUTO as CODIGO, NOME_DO_PRODUTO as DESCRITOR,  
+SABOR, TAMANHO, EMBALAGEM, PRECO_DE_LISTA as PRECO_LISTA 
+FROM sucos_vendas.tabela_de_produtos 
+WHERE CODIGO_DO_PRODUTO NOT IN (SELECT CODIGO FROM PRODUTOS);
+
+select * FROM PRODUTOS;
+
+/*
+Inclua todos os clientes na tabela CLIENTES baseados nos registros da 
+tabela TABELA_DE_CLIENTES da base SUCOS_VENDAS.
+Cuidado com o nome dos campos e lembre-se que 
+já incluímos 3 clientes na nossa tabela, pelo exercício anterior. */
+
+INSERT INTO CLIENTES
+SELECT CPF, NOME, ENDERECO_1 AS ENDERECO, BAIRRO, CIDADE, 
+ESTADO, CEP, DATA_DE_NASCIMENTO AS DATA_NASCIMENTO, IDADE, SEXO, 
+LIMITE_DE_CREDITO AS LIMITE_CREDITO, VOLUME_DE_COMPRA AS VOLUME_COMPRA, PRIMEIRA_COMPRA
+FROM sucos_vendas.tabela_de_clientes
+WHERE CPF NOT IN (SELECT CPF FROM CLIENTES);
+
+select * FROM CLIENTES;
+
